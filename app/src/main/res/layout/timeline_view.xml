@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="1sp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.master.exoplayer.MasterExoPlayer
+            android:id="@+id/frame"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:src="@drawable/user_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/count_layout"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/eye"
+            android:layout_width="20sp"
+            android:layout_height="20sp"/>
+        <TextView
+            android:textColor="@color/white"
+            android:text="10k"
+            android:id="@+id/count"
+            android:layout_marginStart="6dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
